@@ -6,15 +6,15 @@ export const PointsToWinContext = React.createContext();
 
 const CounterWrapper = () => {
 
-  const [pointsValue, setPointsValue] = useState(10);
+  const [pointsValue, setPointsValue] = useState(3);
 
   return (
     <div>
       <PointsToWinContext.Provider value={{pointsValue, setPointsValue}}>
         <PointsToWin />
+        <CountButton />
+        <CountButton />
       </PointsToWinContext.Provider>
-        <CountButton />
-        <CountButton />
       
     </div>
   );
