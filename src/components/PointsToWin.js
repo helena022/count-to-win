@@ -1,8 +1,10 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
+import { PointsToWinContext } from "./CounterWrapper";
 import "./PointsToWin.css";
 
 const PointsToWin = () => {
-    const [pointsValue, setPointsValue] = useState(10);
+    const {pointsValue} = useContext(PointsToWinContext);
+    const {setPointsValue} = useContext(PointsToWinContext);
 
     const handleInputChange = (event) => {
         setPointsValue(event.target.value);

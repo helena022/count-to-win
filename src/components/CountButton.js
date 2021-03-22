@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import "./CountButton.css";
 
 const CountButton = () => {
@@ -11,6 +11,7 @@ const CountButton = () => {
     const handleClickSubstraction = () => {
         setCurrentCount(currentCount - 1);
     }
+
 
     return (
         <div>
