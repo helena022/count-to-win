@@ -1,8 +1,10 @@
-import React, {useState, useContext} from "react";
+import React, {useState, useContext, useEffect, createContext} from "react";
 import "./CountButton.css";
 import { DidWinContext, PointsToWinContext } from "./CounterWrapper";
 
-const CountButton = () => {
+export const CountButtonContext = createContext();
+
+const CountButton = (props) => {
     const [currentCount, setCurrentCount] = useState(0);
 
     const {pointsValue} = useContext(PointsToWinContext);
@@ -12,9 +14,15 @@ const CountButton = () => {
     const handleClickAddition = () => {
         if(currentCount === pointsValue - 1){
             setCurrentCount(currentCount + 1);
+            
+            setTimeout(function(){ 
+                alert(props.team.toUpperCase() + " WINS!");
+                setDidWin(true); }, 
+                50);
+            
+            /*setCurrentCount(currentCount + 1);
             setDidWin(true);
-            /*alert("YOU WIN!");
-            setCurrentCount(0);*/
+            alert(props.team.toUpperCase() + " WINS!");*/
         } else {
             setCurrentCount(currentCount + 1);
         } 
@@ -29,8 +37,17 @@ const CountButton = () => {
         }   
     }
 
+    useEffect(() => {
+        if (didWin){
+            setCurrentCount(0);
+            setDidWin(false);
+        }
+      }, [didWin]);
+    
+
     return (
         <div>
+            {props.team}
             <div className={"count-display"}>{currentCount}</div>
             <button onClick={handleClickSubstraction}>-1</button>
             <button onClick={handleClickAddition}>+1</button>
