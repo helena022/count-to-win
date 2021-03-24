@@ -3,20 +3,53 @@ import { PointsToWinContext } from "./CounterWrapper";
 import "./PointsToWin.css";
 
 const PointsToWin = () => {
+    // state that enables score needed to win to be edited when true
+    const [shouldDisplayInput, setShouldDisplayInput] = useState(false);
+
     // imports pointsValue state from context
     const {pointsValue} = useContext(PointsToWinContext);
     const {setPointsValue} = useContext(PointsToWinContext);
 
-    // handles input
+    // state to store input temporarily, enables canceling the input and reverting pointsValue to previous state
+    const [tempPointsValue, setTempPointsValue] = useState(pointsValue);
+
+    // edit button
+    const handleEditButton = () => {
+        setShouldDisplayInput(true);
+    }
+
+    // handles input change
     const handleInputChange = (event) => {
-        setPointsValue(event.target.value);
+        setTempPointsValue(event.target.value);
+    }
+
+    // handles ok button to accept new input
+    const handleOkButton = (event) => {
+        setPointsValue(tempPointsValue);
+        //alert("New win condition is " + tempPointsValue + " points");
+        setShouldDisplayInput(false);
+    }
+
+    // handles cancel button
+    const handleCancelButton = (event) => {
+        setShouldDisplayInput(false);
     }
 
     // renders the points needed to win display and number input
     return (
         <div>
-            <div className={"points-display"}>{pointsValue}</div>
-            <input type="number" value={pointsValue} onChange={handleInputChange} />
+            {!shouldDisplayInput && (
+                <div className={"points-display"}>{pointsValue}
+                    <button onClick={handleEditButton}>edit</button>
+                </div>
+            )}
+            {shouldDisplayInput && (
+                <div className={"edit-points"}>
+                    <input type="number" name="edit" value={tempPointsValue} onChange={handleInputChange} />
+                    <button type="submit" onClick={handleOkButton}>ok</button>
+                    <button type="submit" onClick={handleCancelButton}>cancel</button>
+                </div>
+                )}
         </div>
     )
 }

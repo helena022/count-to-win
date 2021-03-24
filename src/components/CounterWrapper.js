@@ -1,4 +1,4 @@
-import React, {useEffect, useState, createContext, setState} from "react";
+import React, {useState, createContext, setState} from "react";
 import CountButton from "./CountButton";
 import PointsToWin from "./PointsToWin";
 
@@ -7,7 +7,7 @@ export const DidWinContext = createContext();
 
 const CounterWrapper = () => {
   // CounterWrapper state declarations
-  const [pointsValue, setPointsValue] = useState(5);
+  const [pointsValue, setPointsValue] = useState(10);
   const [didWin, setDidWin] = useState(false);
 
   // renders PointsToWin component and two CountButtons
@@ -18,13 +18,14 @@ const CounterWrapper = () => {
       <PointsToWinContext.Provider value={{pointsValue, setPointsValue}}>
         
         <PointsToWin />
+        <p></p>
 
         {/* provides didWin state to CountButton components */}
         <DidWinContext.Provider value={{didWin, setDidWin}}>
           <CountButton team="Team 1" />
           <CountButton team="Team 2"/>
         </DidWinContext.Provider>
-        
+
       </PointsToWinContext.Provider>
       
     </div>
