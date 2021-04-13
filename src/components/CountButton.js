@@ -46,10 +46,15 @@ const CountButton = (props) => {
             setDidWin(false);
         }
       }, [didWin]);
+
+    // style object
+    const countDisplayStyle = {
+        backgroundColor: props.teamColor
+    }
     
     // renders the score display div with +1 and -1 buttons
     return (
-        <div>
+        <div style={countDisplayStyle}>
             {props.team}
             <div className={"count-display"}>{currentCount}</div>
             <button onClick={handleClickSubstraction}>-1</button>

@@ -1,4 +1,4 @@
-import React, {useState, createContext, setState} from "react";
+import React, {useState, createContext} from "react";
 import CountButton from "./CountButton";
 import PointsToWin from "./PointsToWin";
 
@@ -22,8 +22,8 @@ const CounterWrapper = () => {
 
         {/* provides didWin state to CountButton components */}
         <DidWinContext.Provider value={{didWin, setDidWin}}>
-          <CountButton team="Team 1" />
-          <CountButton team="Team 2"/>
+          <CountButton teamColor={"#C70039"} team="Team 1" />
+          <CountButton teamColor={"#1f618d"} team="Team 2"/>
         </DidWinContext.Provider>
 
       </PointsToWinContext.Provider>
