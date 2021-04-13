@@ -1,6 +1,6 @@
 import React, {useState, useContext, useEffect, createContext} from "react";
 import "./CountButton.css";
-import { DidWinContext, PointsToWinContext } from "./CounterWrapper";
+import { DidWinContext, PointsToWinContext } from "../CounterWrapper/CounterWrapper";
 
 const CountButton = (props) => {
     // count button state declarations

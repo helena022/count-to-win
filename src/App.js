@@ -1,6 +1,6 @@
 import React from "react";
-import './App.css';
-import CounterWrapper from "./components/CounterWrapper";
+import "./styles/App.css"
+import CounterWrapper from "./components/CounterWrapper/CounterWrapper";
 
 function App() {
   return (

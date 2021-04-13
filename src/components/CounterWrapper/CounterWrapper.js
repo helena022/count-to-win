@@ -1,6 +1,6 @@
 import React, {useState, createContext} from "react";
-import CountButton from "./CountButton";
-import PointsToWin from "./PointsToWin";
+import CountButton from "../CountButton/CountButton";
+import PointsToWin from "../PointsToWin/PointsToWin";
 
 export const PointsToWinContext = createContext(); 
 export const DidWinContext = createContext();

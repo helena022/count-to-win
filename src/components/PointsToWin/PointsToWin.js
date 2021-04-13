@@ -1,6 +1,6 @@
 import React, {useContext, useState} from "react";
-import { PointsToWinContext } from "./CounterWrapper";
-import "./PointsToWin.css";
+import { PointsToWinContext } from "../CounterWrapper/CounterWrapper";
+import "../PointsToWin/PointsToWin.css";
 
 const PointsToWin = () => {
     // state that enables score needed to win to be edited when true
