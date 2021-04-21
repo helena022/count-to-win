@@ -45,7 +45,7 @@ const CountButton = (props) => {
             setCurrentCount(0);
             setDidWin(false);
         }
-      }, [didWin]);
+      }, [setDidWin, didWin]);
 
     // style object
     const countDisplayStyle = {
