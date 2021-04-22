@@ -1,6 +1,7 @@
 import React, {useState, createContext} from "react";
 import CountButton from "../CountButton/CountButton";
 import PointsToWin from "../PointsToWin/PointsToWin";
+import "./CounterWrapper.css";
 
 export const PointsToWinContext = createContext(); 
 export const DidWinContext = createContext();
@@ -12,7 +13,7 @@ const CounterWrapper = () => {
 
   // renders PointsToWin component and two CountButtons
   return (
-    <div>
+    <div className="counter-wrapper">
       
       {/* provides pointsValue state to PointsToWin and CountButton components*/}
       <PointsToWinContext.Provider value={{pointsValue, setPointsValue}}>
