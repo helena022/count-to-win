@@ -1,3 +1,6 @@
 .counter-wrapper {
     border: 1px solid black;
 }
+.teams {
+    display: flex;
+}
