@@ -1,0 +1,37 @@
+.points-display {
+    font-size: 200px;
+}
+.points-display button {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    transition: transform 200ms;
+}
+.points-display button:hover {
+    transform: scale(1.2);
+}
+.edit-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buttons {
+    display: flex;
+}
+.edit-points button {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    transition: transform 200ms;
+}
+.edit-points input {
+    font-size: 30px;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border: 3px solid black;
+}
+.edit-points button:hover {
+    transform: scale(1.2);
+}
