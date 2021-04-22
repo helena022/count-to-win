@@ -1,4 +1,22 @@
 .team {
     color: white;
     text-align: center;
+    font-size: 60px;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.count-display {
+    font-size: 130px;
+    margin: 35px;
+}
+.team button {
+    background-color: transparent;
+    font-size: 40px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    margin: 15px;
 }

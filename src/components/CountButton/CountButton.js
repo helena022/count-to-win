@@ -57,8 +57,8 @@ const CountButton = (props) => {
         <div style={countDisplayStyle} className="team">
             {props.team}
             <div className={"count-display"}>{currentCount}</div>
-            <button onClick={handleClickSubstraction}>-1</button>
-            <button onClick={handleClickAddition}>+1</button>
+            <button onClick={handleClickSubstraction}>-</button>
+            <button onClick={handleClickAddition}>+</button>
         </div>
     )
 }
