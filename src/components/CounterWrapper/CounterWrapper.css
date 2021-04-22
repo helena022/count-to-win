@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 .counter-wrapper {
     border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
+    width: 90vw;
 }
 .teams {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
