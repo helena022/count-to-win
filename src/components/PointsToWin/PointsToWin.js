@@ -45,7 +45,7 @@ const PointsToWin = () => {
             )}
             {shouldDisplayInput && (
                 <div className={"edit-points"}>
-                    <input type="text" value={tempPointsValue} onChange={handleInputChange} />
+                    <input type="number" value={tempPointsValue} onChange={handleInputChange} />
                     <div className="buttons">
                         <button type="submit" onClick={handleOkButton}>ok</button>
                         <button type="submit" onClick={handleCancelButton}>cancel</button>
