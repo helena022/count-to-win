@@ -2,13 +2,13 @@
     color: white;
     text-align: center;
     font-size: 60px;
-    padding: 40px;
+    padding: 30px;
     margin: 20px;
     border-radius: 20px;
 }
 .count-display {
     font-size: 130px;
-    margin: 35px;
+    margin: 25px;
 }
 .team button {
     background-color: transparent;
@@ -20,3 +20,8 @@
     height: 70px;
     margin: 15px;
 }
+.team button:active {
+    -webkit-box-shadow: inset 1px 1px 10px #373737;
+    -moz-box-shadow: inset 1px 1px 10px #373737;
+    box-shadow: inset 1px 1px 10px #373737;
+ }
