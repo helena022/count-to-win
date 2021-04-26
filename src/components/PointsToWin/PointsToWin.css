@@ -21,6 +21,7 @@
 .edit-points button {
     border: none;
     background-color: transparent;
+    color: #282828;
     font-size: 30px;
     transition: transform 200ms;
 }
@@ -30,7 +31,7 @@
     padding: 12px 20px;
     margin: 10px;
     border: none;
-    border: 3px solid black;
+    border: 3px solid #282828;
 }
 .edit-points button:hover {
     transform: scale(1.2);
