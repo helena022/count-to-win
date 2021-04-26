@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 .counter-wrapper {
     font-family: 'Open Sans', sans-serif;
+    color: #282828;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;

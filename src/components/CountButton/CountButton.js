@@ -49,7 +49,8 @@ const CountButton = (props) => {
 
     // style object
     const countDisplayStyle = {
-        backgroundColor: props.teamColor
+        backgroundColor: props.teamColor,
+        backgroundImage: props.backgroundImage
     }
     
     // renders the score display div with +1 and -1 buttons

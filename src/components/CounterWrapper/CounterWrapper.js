@@ -22,8 +22,8 @@ const CounterWrapper = () => {
         {/* provides didWin state to CountButton components */}
         <DidWinContext.Provider value={{didWin, setDidWin}}>
           <div className="teams">
-            <CountButton teamColor={"#C70039"} team="Team 1" />
-            <CountButton teamColor={"#1f618d"} team="Team 2" />
+            <CountButton teamColor={"#fce043"} backgroundImage={"linear-gradient(315deg, #fce043 0%, #fb7ba2 74%)"} team="Team 1" />
+            <CountButton teamColor={"#5de6de"} backgroundImage={"linear-gradient(315deg, #5de6de 0%, #b58ecc 74%)"} team="Team 2" />
           </div>
         </DidWinContext.Provider>
 
