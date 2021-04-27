@@ -23,8 +23,13 @@ const PointsToWin = () => {
         setTempPointsValue(event.target.value);
     }
 
-    // handles ok button to accept new input
+    // handles ok button to accept new input and checks if input is a number
     const handleOkButton = (event) => {
+
+        if(!Number(tempPointsValue)){
+            alert("please enter a number")
+            return;
+        }
         setPointsValue(tempPointsValue);
         //alert("New win condition is " + tempPointsValue + " points");
         setShouldDisplayInput(false);
