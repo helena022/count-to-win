@@ -37,7 +37,7 @@ const PointsToWin = () => {
 
     // renders the points needed to win display and number input
     return (
-        <div>
+        <div className={"points-container"}>
             {!shouldDisplayInput && (
                 <div className={"points-display"}>{pointsValue}
                     <button onClick={handleEditButton}>edit</button>
