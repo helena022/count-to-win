@@ -1,5 +1,6 @@
 .points-display {
-    font-size: 220px;
+    font-size: 250px;
+    text-shadow: 1px 1px 4px gray;
 }
 .points-display button {
     border: none;
