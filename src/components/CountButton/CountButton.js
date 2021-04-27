@@ -14,7 +14,7 @@ const CountButton = (props) => {
     // handles +1 button
     const handleClickAddition = () => {
         // if clicking the button would result in winning, trigger win alert and set didWin state to true
-        if(currentCount === pointsValue - 1){
+        if(currentCount >= pointsValue - 1){
             setCurrentCount(currentCount + 1);
             
             setTimeout(function(){ 

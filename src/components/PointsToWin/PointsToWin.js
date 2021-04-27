@@ -25,7 +25,7 @@ const PointsToWin = () => {
 
     // handles ok button to accept new input and checks if input is a number
     const handleOkButton = (event) => {
-
+       
         if(!Number(tempPointsValue)){
             alert("Please enter a number");
             return;
