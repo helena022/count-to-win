@@ -27,7 +27,7 @@ const PointsToWin = () => {
     const handleOkButton = (event) => {
 
         if(!Number(tempPointsValue)){
-            alert("please enter a number")
+            alert("Please enter a number");
             return;
         }
         setPointsValue(tempPointsValue);
