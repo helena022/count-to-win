@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/helena022/count-to-win/static/css/main.1f599218.chunk.css",
-    "main.js": "/helena022/count-to-win/static/js/main.0024a2be.chunk.js",
-    "main.js.map": "/helena022/count-to-win/static/js/main.0024a2be.chunk.js.map",
-    "runtime-main.js": "/helena022/count-to-win/static/js/runtime-main.34c66364.js",
-    "runtime-main.js.map": "/helena022/count-to-win/static/js/runtime-main.34c66364.js.map",
-    "static/js/2.6b113da0.chunk.js": "/helena022/count-to-win/static/js/2.6b113da0.chunk.js",
-    "static/js/2.6b113da0.chunk.js.map": "/helena022/count-to-win/static/js/2.6b113da0.chunk.js.map",
-    "static/js/3.d998e1ce.chunk.js": "/helena022/count-to-win/static/js/3.d998e1ce.chunk.js",
-    "static/js/3.d998e1ce.chunk.js.map": "/helena022/count-to-win/static/js/3.d998e1ce.chunk.js.map",
-    "index.html": "/helena022/count-to-win/index.html",
-    "static/css/main.1f599218.chunk.css.map": "/helena022/count-to-win/static/css/main.1f599218.chunk.css.map",
-    "static/js/2.6b113da0.chunk.js.LICENSE.txt": "/helena022/count-to-win/static/js/2.6b113da0.chunk.js.LICENSE.txt"
+    "main.css": "/count-to-win/static/css/main.1f599218.chunk.css",
+    "main.js": "/count-to-win/static/js/main.0024a2be.chunk.js",
+    "main.js.map": "/count-to-win/static/js/main.0024a2be.chunk.js.map",
+    "runtime-main.js": "/count-to-win/static/js/runtime-main.e5b1aba1.js",
+    "runtime-main.js.map": "/count-to-win/static/js/runtime-main.e5b1aba1.js.map",
+    "static/js/2.6b113da0.chunk.js": "/count-to-win/static/js/2.6b113da0.chunk.js",
+    "static/js/2.6b113da0.chunk.js.map": "/count-to-win/static/js/2.6b113da0.chunk.js.map",
+    "static/js/3.d998e1ce.chunk.js": "/count-to-win/static/js/3.d998e1ce.chunk.js",
+    "static/js/3.d998e1ce.chunk.js.map": "/count-to-win/static/js/3.d998e1ce.chunk.js.map",
+    "index.html": "/count-to-win/index.html",
+    "static/css/main.1f599218.chunk.css.map": "/count-to-win/static/css/main.1f599218.chunk.css.map",
+    "static/js/2.6b113da0.chunk.js.LICENSE.txt": "/count-to-win/static/js/2.6b113da0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.34c66364.js",
+    "static/js/runtime-main.e5b1aba1.js",
     "static/js/2.6b113da0.chunk.js",
     "static/css/main.1f599218.chunk.css",
     "static/js/main.0024a2be.chunk.js"
